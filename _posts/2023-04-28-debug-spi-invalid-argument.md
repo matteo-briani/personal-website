@@ -4,6 +4,9 @@ layout: post
 categories: embedded
 ---
 
+![Olimex and 433 mhz tranceiver]({{site.baseurl}}/assets/images/olimex433.jpg)
+
+
 ## The issue
 
 One day in the lab, the requirement is a rapid prototyping, trasmitting data over the 433Mhz spectrum; nothing more nothing less.
