@@ -1,5 +1,5 @@
 ---
-title: [DRAFT] Zig and CLAP plugin - Part 1
+title: DRAFT Zig and CLAP plugin - Part 1
 layout: post
 categories: audio
 ---
