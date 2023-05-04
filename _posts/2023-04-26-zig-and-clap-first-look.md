@@ -4,7 +4,6 @@ layout: post
 categories: audio
 ---
 
-
 ![Zig and CLAP logos]({{site.baseurl}}/assets/images/zig_and_clap.png)
 
 
