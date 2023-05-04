@@ -88,12 +88,12 @@ Digging the output of `strace` in the quest of finding `EINVAL`, we end up with 
 Well, well, well, pretty easy to see right? Mmm...no, actually no, debugging `ioctl` messages is really not my free time hobby. 
 However, we collected a valuable information: at the beginning of our SPI exchange, we passed an invalid argument to the SPI device.  
 Let's stress this, the invalid argument refers to the SPI device, not our CC1101 ic!
-So, since we are sure that our dead SPI interface is working - remember the test with `spidev_test` - we are left to check what is actually happening within the invoked code.
+So, since we are sure that our dear SPI interface is working - remember the test with `spidev_test` - we are left to check what is actually happening within the invoked code.
 
 ## Good habit: read the source!
 
 Take another look at the Python trace-back that we posted in the beginning, we see this line:
-```
+```python
 with cc1101.CC1101(lock_spi_device=True) as transceiver:
 ```
 which is a Python context manager.  It calls the method `__enter__`  of the class `cc1101.CC1101` and assign its result to the variable `transceiver`. At the end of the `with` block, it will call the method `__exit__`.
@@ -154,4 +154,9 @@ transmitting 0x09783031783032783033 (b'\tx01x02x03')
 
 Eureka! It works!!!
 
-To be fair, the actual proof of the transmission has been done by monitoring the 433.92MHz spectrum with a software defined radio - SDR.
+To be fair, the actual proof of the transmission has been done by monitoring the 433.92MHz spectrum with a software defined radio.
+
+## Contribute
+
+After all, a contribution was due to the nice [Python cc1101 project](https://github.com/fphammerle/python-cc1101). 
+So an [issue](https://github.com/fphammerle/python-cc1101/issues/128) was opened that lead to [this merged pull request](https://github.com/fphammerle/python-cc1101/pull/129).
