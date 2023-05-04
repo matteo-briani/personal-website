@@ -1,8 +1,11 @@
 ---
-title: Zig and CLAP plugin - Part 1
+title: [DRAFT] Zig and CLAP plugin - Part 1
 layout: post
 categories: audio
 ---
+
+
+![Zig and CLAP logos]({{site.baseurl}}/assets/images/zig_and_clap.png)
 
 
 ## Zig and CLAP, what are we talking about
