@@ -71,7 +71,7 @@ We can scroll all output to read it byte by byte, or generate an artistic graphi
 The picture shows each byte of the `a.out` ELF file as a pixel-plot.
 White pixel indicate a `0000` byte.
 
-![a.out pixel plot](/assets/images/a_out_pixelplot.png)
+![a.out pixel plot]({{site.baseurl}}/assets/images/a_out_pixelplot.png)
 
 One this that stands out immediately is the whiteness of the picture.
 The information is localized in specific portions of the ELF file, leaving zero bytes in between.
@@ -84,6 +84,6 @@ Just check that your editor does not decide to do something fancy when saving th
 In Vim, you prevent unwanted mangling by setting `:set binary` and `set noeol`.
 This is our artistic result: making "hello world" even more hello-worldier.
 
-![a.out mangled pixel plot](/assets/images/a_out_mangled_pixelplot.png)
+![a.out mangled pixel plot]({{site.baseurl}}/assets/images/a_out_mangled_pixelplot.png)
 
 
