@@ -4,7 +4,7 @@ layout: post
 categories: software
 ---
 
-![ELF Executable and Linkable Format diagram from Ange Albertini](https://en.wikipedia.org/wiki/File:ELF_Executable_and_Linkable_Format_diagram_by_Ange_Albertini.png)
+![ELF Executable and Linkable Format diagram from Ange Albertini](https://upload.wikimedia.org/wikipedia/commons/e/e4/ELF_Executable_and_Linkable_Format_diagram_by_Ange_Albertini.png)
 
 
 ## What is the ELF?
