@@ -82,20 +82,20 @@ Let's take a text editor and do some hex mangling.
 `xxd` support the conversion back and forth from the binary to the hex dump.
 So, we can get the hex output with `xxd -c 127`, modify the output and revert back to binary with `xxd -r`.
 By the way, the number `127` isn't magical, it just the size of the image rendered with [this tool](https://github.com/matteo-briani/bytes-to-image).
-The `-c` option allows you to decide how many octects per string you want to edit, thus becomes really easy to match the size of the picture and make some graphical editing.
-On last extra note: just check that your editor does not decide to do something fancy when saving the file, like a newline at the end of it when saving it.
+The `-c` option allows you to decide how many octects per string you want to edit, thus it becomes really easy to match the size of the picture and make some graphical editing.
+One last extra note: just check that your editor does not decide to do something fancy when saving the file, like a newline at the end of it when saving it.
 In Vim, you prevent unwanted extra mangling by setting `:set binary` and `set noeol`.
 
-## Can we feel a bit of that emptiness?
+## Can we fill a bit of that emptiness?
 
-So, with the help of the hex editor we can modify the ELF file and change some zero bytes.
+So, with the help of the hex editor we modify the ELF file and change some zero bytes.
 This is our artistic result: making "hello world" even more hello-worldier, and the program still works!
 
 ![a.out mangled pixel plot]({{site.baseurl}}/assets/images/a_out_mangled_pixelplot.png)
 
 Of course, we couldn't just write just anywhere in the ELF, but I did my homework and I choose a nice spot.
-You don't need to trust me that the ELF keeps on working fine; just download both files: [the original]({{site.baseurl}}/assets/code/the-elf-hello/a.out.original) and [the modified]({{site.baseurl}}/assets/code/the-elf-hello/a.out.mangled).
-Anyway, if you don't want to download the files, here is the output of both and their `md5sum`:
+You don't need to trust me that the ELF works fine even with this modification, just download both [the original]({{site.baseurl}}/assets/code/the-elf-hello/a.out.original) and [the modified]({{site.baseurl}}/assets/code/the-elf-hello/a.out.mangled) and see it by yourself.
+Anyway, if you trust me, here is the output of both files and their `md5sum`:
 
 ```
 >./a.out.original
@@ -106,6 +106,8 @@ Hello world!
 2c29a699f239839dc15c2edc9213dc9b  a.out.mangled
 64edee7d4de7cd40edd9d2219b154031  a.out.original
 ```
+
+Not an issue, the modified file still works as expected!
 
 ## An explanation, please
 
