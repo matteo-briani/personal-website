@@ -11,14 +11,13 @@ categories: software
 
 > the Executable and Linkable Format[2] (ELF, formerly named Extensible Linking Format), is a common standard file format for executable files, object code, shared libraries, and core dumps.
 
-In Wikipedia there is a [great page](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) that explains the ELF details, so I am not digging there.
-What we can do instead, is trying to read some ELF files to learn something in the process.
+In Wikipedia there is a [great page](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) that explains the ELF details, so I am not digging there, at least not now.
+What we can do instead, is trying to play with some ELF files and learn something in the process.
 
-So, we compile a very simple program and read what ELF is produced.
+To start, we compile a very simple program and read what ELF is produced.
 The program is the ever-green hello world in C (did you miss it?)
 
 ```C
-/* hello-world.c */
 #include <stdio.h>
 
 int main(void) {
@@ -30,7 +29,7 @@ int main(void) {
 which we compile with
 
 ```
-gcc hello-world.c
+gcc hello.c
 ```
 
 We have just generated the executable `a.out`.
@@ -67,23 +66,46 @@ This is an excerpt of the output:
 [..]
 ```
 
-We can scroll all output to read it byte by byte, or generate an artistic graphical of the file with [this](https://github.com/matteo-briani/bytes-to-image).
+We can scroll all output to read it byte by byte, but to have a better overview of the file I wrote [this](https://github.com/matteo-briani/bytes-to-image) script to render the file as a `png` image.
 The picture shows each byte of the `a.out` ELF file as a pixel-plot.
-White pixel indicate a `0000` byte.
+White pixels indicate a `0000` byte.
 
 ![a.out pixel plot]({{site.baseurl}}/assets/images/a_out_pixelplot.png)
 
-One this that stands out immediately is the whiteness of the picture.
+One thing that stands out immediately is the whiteness of the picture.
 The information is localized in specific portions of the ELF file, leaving zero bytes in between.
 Are the white spaces functional? Not all of them, and we can prove it by brutally write something on the `a.out` binary.
 
+## Digression, edit a hex file - the simple tools way
+
 Let's take a text editor and do some hex mangling.
-`xxd` support the conversion back and forth of the hex dump, so we can get the hex output with something like `xxd -c 127`, modify the output and revert back to binary with `xxd -r`.
-The `-c` option allows you to decide how many octect per string you want to edit, thus becomes really easy to match the size of the picture to make some graphical editing.
-Just check that your editor does not decide to do something fancy when saving the file, like a newline at the end.
-In Vim, you prevent unwanted mangling by setting `:set binary` and `set noeol`.
-This is our artistic result: making "hello world" even more hello-worldier.
+`xxd` support the conversion back and forth from the binary to the hex dump.
+So, we can get the hex output with `xxd -c 127`, modify the output and revert back to binary with `xxd -r`.
+By the way, the number `127` isn't magical, it just the size of the image rendered with [this tool](https://github.com/matteo-briani/bytes-to-image).
+The `-c` option allows you to decide how many octects per string you want to edit, thus becomes really easy to match the size of the picture and make some graphical editing.
+On last extra note: just check that your editor does not decide to do something fancy when saving the file, like a newline at the end of it when saving it.
+In Vim, you prevent unwanted extra mangling by setting `:set binary` and `set noeol`.
+
+## Can we feel a bit of that emptiness?
+
+So, with the help of the hex editor we can modify the ELF file and change some zero bytes.
+This is our artistic result: making "hello world" even more hello-worldier, and the program still works!
 
 ![a.out mangled pixel plot]({{site.baseurl}}/assets/images/a_out_mangled_pixelplot.png)
 
+Of course, we couldn't just write just anywhere in the ELF, but I did my homework and I choose a nice spot.
+You don't need to trust me that the ELF keeps on working fine; just download both files: [the original]({{site.baseurl}}/assets/code/the-elf-hello/a.out.original) and [the modified]({{site.baseurl}}/assets/code/the-elf-hello/a.out.mangled).
+Anyway, if you don't want to download the files, here is the output of both and their `md5sum`:
+
+```
+>./a.out.original
+Hello world!
+>./a.out.mangled
+Hello world!
+>md5sum a.out*
+2c29a699f239839dc15c2edc9213dc9b  a.out.mangled
+64edee7d4de7cd40edd9d2219b154031  a.out.original
+```
+
+## An explanation, please
 
