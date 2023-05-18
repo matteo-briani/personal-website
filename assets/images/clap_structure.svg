@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="238.65814mm"
+   height="321.34201mm"
+   viewBox="0 0 238.65814 321.34201"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path40347" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path40344" />
+    </marker>
+    <rect
+       x="90.67598"
+       y="179.76025"
+       width="239.11723"
+       height="251.81741"
+       id="rect10330" />
+    <rect
+       x="98.204613"
+       y="182.76987"
+       width="250.51233"
+       height="113.66439"
+       id="rect5176" />
+    <rect
+       x="90.67598"
+       y="179.76025"
+       width="239.11723"
+       height="251.81741"
+       id="rect10330-1" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-9"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path40347-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-91"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path40347-0" />
+    </marker>
+    <rect
+       x="90.67598"
+       y="179.76025"
+       width="302.95969"
+       height="495.89886"
+       id="rect10330-5" />
+    <rect
+       x="90.67598"
+       y="179.76025"
+       width="355.08075"
+       height="350.02509"
+       id="rect10330-0" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(58.922285,-37.858295)">
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000001;stroke-width:0.264583;stroke-opacity:1"
+       id="rect31"
+       width="70.942993"
+       height="64.482254"
+       x="18.415667"
+       y="44.015747"
+       rx="8.4276695"
+       ry="9.200573" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text5174"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Inconsolata Nerd Font';-inkscape-font-specification:'Inconsolata Nerd Font';white-space:pre;shape-inside:url(#rect5176)" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,4.1097607,-11.277235)"
+       id="text10328"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:1.25;font-family:'Inconsolata Nerd Font';-inkscape-font-specification:'Inconsolata Nerd Font';white-space:pre;shape-inside:url(#rect10330)"><tspan
+         x="90.675781"
+         y="199.89574"
+         id="tspan69331">clap_plugin_entry_t
+</tspan><tspan
+         x="90.675781"
+         y="226.56236"
+         id="tspan69333">
+</tspan><tspan
+         x="90.675781"
+         y="253.22899"
+         id="tspan69335">METHODS
+</tspan><tspan
+         x="90.675781"
+         y="279.89561"
+         id="tspan69337">init
+</tspan><tspan
+         x="90.675781"
+         y="306.56224"
+         id="tspan69339">deinit
+</tspan><tspan
+         x="90.675781"
+         y="333.22887"
+         id="tspan69341">get_factory
+</tspan><tspan
+         x="90.675781"
+         y="359.89549"
+         id="tspan69343">
+</tspan><tspan
+         x="90.675781"
+         y="386.56212"
+         id="tspan69345">ATTRIBUTES
+</tspan><tspan
+         x="90.675781"
+         y="413.22874"
+         id="tspan69347">clap_version</tspan></text>
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000001;stroke-width:0.264583;stroke-opacity:1"
+       id="rect31-8"
+       width="71.662636"
+       height="119.83575"
+       x="-58.789993"
+       y="239.23225"
+       rx="8.4276695"
+       ry="9.200573" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-73.095897,183.93928)"
+       id="text10328-7"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:1.25;font-family:'Inconsolata Nerd Font';-inkscape-font-specification:'Inconsolata Nerd Font';white-space:pre;shape-inside:url(#rect10330-5)"><tspan
+         x="90.675781"
+         y="199.89574"
+         id="tspan69349">clap_plugin_t
+</tspan><tspan
+         x="90.675781"
+         y="226.56236"
+         id="tspan69351">
+</tspan><tspan
+         x="90.675781"
+         y="253.22899"
+         id="tspan69353">METHODS
+</tspan><tspan
+         x="90.675781"
+         y="279.89561"
+         id="tspan69355">init
+</tspan><tspan
+         x="90.675781"
+         y="306.56224"
+         id="tspan69357">destroy
+</tspan><tspan
+         x="90.675781"
+         y="333.22887"
+         id="tspan69359">activate
+</tspan><tspan
+         x="90.675781"
+         y="359.89549"
+         id="tspan69361">deactivate
+</tspan><tspan
+         x="90.675781"
+         y="386.56212"
+         id="tspan69363">start_processing
+</tspan><tspan
+         x="90.675781"
+         y="413.22874"
+         id="tspan69365">stop_processing
+</tspan><tspan
+         x="90.675781"
+         y="439.89537"
+         id="tspan69367">reset
+</tspan><tspan
+         x="90.675781"
+         y="466.562"
+         id="tspan69369">process
+</tspan><tspan
+         x="90.675781"
+         y="493.22862"
+         id="tspan69371">get_extension
+</tspan><tspan
+         x="90.675781"
+         y="519.89525"
+         id="tspan69373">on_main_thread
+</tspan><tspan
+         x="90.675781"
+         y="546.56187"
+         id="tspan69375">
+</tspan><tspan
+         x="90.675781"
+         y="573.2285"
+         id="tspan69377">ATTRIBUTES
+</tspan><tspan
+         x="90.675781"
+         y="599.89513"
+         id="tspan69379">descriptor
+</tspan><tspan
+         x="90.675781"
+         y="626.56175"
+         id="tspan69381">plugin_data</tspan></text>
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000001;stroke-width:0.264583;stroke-opacity:1"
+       id="rect31-4"
+       width="88.266273"
+       height="87.126274"
+       x="91.337296"
+       y="242.31981"
+       rx="8.4276695"
+       ry="9.200573" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,77.031388,187.02683)"
+       id="text10328-8"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:1.25;font-family:'Inconsolata Nerd Font';-inkscape-font-specification:'Inconsolata Nerd Font';white-space:pre;shape-inside:url(#rect10330-0)"><tspan
+         x="90.675781"
+         y="199.89574"
+         id="tspan69383">clap_plugin_descriptor_t
+</tspan><tspan
+         x="90.675781"
+         y="226.56236"
+         id="tspan69385">
+</tspan><tspan
+         x="90.675781"
+         y="253.22899"
+         id="tspan69387">ATTRIBUTES
+</tspan><tspan
+         x="90.675781"
+         y="279.89561"
+         id="tspan69389">clap_version
+</tspan><tspan
+         x="90.675781"
+         y="306.56224"
+         id="tspan69391">id
+</tspan><tspan
+         x="90.675781"
+         y="333.22887"
+         id="tspan69393">name
+</tspan><tspan
+         x="90.675781"
+         y="359.89549"
+         id="tspan69395">vendor
+</tspan><tspan
+         x="90.675781"
+         y="386.56212"
+         id="tspan69397">manual_url
+</tspan><tspan
+         x="90.675781"
+         y="413.22874"
+         id="tspan69399">support_url
+</tspan><tspan
+         x="90.675781"
+         y="439.89537"
+         id="tspan69401">version
+</tspan><tspan
+         x="90.675781"
+         y="466.562"
+         id="tspan69403">description
+</tspan><tspan
+         x="90.675781"
+         y="493.22862"
+         id="tspan69405">features</tspan></text>
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000001;stroke-width:0.264583;stroke-opacity:1"
+       id="rect31-5"
+       width="81.141563"
+       height="41.664772"
+       x="15.885993"
+       y="150.36816"
+       rx="8.4276695"
+       ry="9.200573" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,1.5800853,95.075176)"
+       id="text10328-9"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:1.25;font-family:'Inconsolata Nerd Font';-inkscape-font-specification:'Inconsolata Nerd Font';white-space:pre;shape-inside:url(#rect10330-1)"><tspan
+         x="90.675781"
+         y="199.89574"
+         id="tspan69407">clap_plugin_factory_t
+</tspan><tspan
+         x="90.675781"
+         y="226.56236"
+         id="tspan69409">
+</tspan><tspan
+         x="90.675781"
+         y="253.22899"
+         id="tspan69411">METHODS
+</tspan><tspan
+         x="90.675781"
+         y="279.89561"
+         id="tspan69413">get_plugin_count
+</tspan><tspan
+         x="90.675781"
+         y="306.56224"
+         id="tspan69415">get_plugin_descriptor
+</tspan><tspan
+         x="90.675781"
+         y="333.22887"
+         id="tspan69417">create_plugin
+</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 25.287856,75.726416 c -40.715191,1.418325 -37.798665,48.749144 -4.818924,65.804574"
+       id="path40285" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-9)"
+       d="m 23.763328,181.75858 c -40.715191,1.41832 -47.244499,11.8097 -47.50509,47.54865"
+       id="path40285-4" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-91)"
+       d="m 87.262334,174.41845 c 40.715186,1.41832 39.018526,16.04774 39.366246,55.70363"
+       id="path40285-7" />
+  </g>
+</svg>
