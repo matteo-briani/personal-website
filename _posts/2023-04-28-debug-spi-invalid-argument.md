@@ -1,5 +1,5 @@
 ---
-title: Debug SPI invalid argument
+title: SPI invalid argument - from error message to a project contribution
 layout: post
 categories: embedded
 ---
