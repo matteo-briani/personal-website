@@ -30,7 +30,7 @@ Writing a CLAP plugin means building a shared library that follows a specific st
 Luckily for us, the [CLAP C bindings](https://github.com/free-audio/clap) are well commented.
 
 To make a CLAP plugin, we have to build a shared library with a `clap_plugin_entry_t` as our structure entry point.
-Besides the entry point, the CLAP format follows the structure portrait in the following image:
+Besides the entry point, the CLAP format follows the structure portrait in the following image.
 Disclaimer: it is not UML on purpose (not a fan of it), it is more a scratch paper note.
 
 ![CLAP structure]({{site.baseurl}}/assets/images/clap_structure.svg)
@@ -48,13 +48,9 @@ git clone git@github.com:free-audio/clap.git
 ```
 
 In this repo, we are only interested in the `include/clap/clap.h` header file, that contains all the `C` interfaces to build a CLAP plugin.
-
-Out goal is to read this header file and provide a minimal implementation of the core functionality of a plugin.
-
+Our goal is to read this header file and provide a minimal implementation of the core functionality of a plugin.
 To keep the example at the absolute bare minimum, we are going to create a plugin that output a constant sine wave at a fixed frequency.
-
 Right now, we are just interested in building a plugin with Zig, later on we will expand and explore the CLAP features.
-
 A CLAP plugin, from a coding prospective, is nothing more than a dynamic library; so let's initialize a zig library with
 
 ```
@@ -62,7 +58,6 @@ zig init-lib
 ```
 
 This command will generate `build.zig` and `src/main.zig` files. BTW, if you poke your head inside `build.zig` you'll notice one of the cool feature of Zig: build instruction are written in Zig itself.
-
 To build the library, we just launch
 
 ```
@@ -144,7 +139,7 @@ pub fn build(b: *std.Build) void {
 
 We are now able to import `clap.h` in `main.zig` using 
 
-```
+```zig
 const clap = @cImport({
     @cInclude("clap/include/clap/clap.h");
 });
