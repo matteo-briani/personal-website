@@ -12,7 +12,14 @@ layout: page
 
 - M.A. Music convervatory - trumpet
 
-## Work
+## Scientific Works
+
+- VEXPA: Validated EXPonential Analysis through regular sub-sampling
+- Validated Exponential Analysis for Harmonic Sounds
+- A hybrid Fourier-Prony method
+- Computing Fekete and Lebesgue points: Simplex, square, disk
+
+## Current Occupation
 
 Freelance remote programmer based in Italy.
 
